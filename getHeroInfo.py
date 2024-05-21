@@ -11,6 +11,25 @@ from bs4 import BeautifulSoup  # 网页解析
 with open('processed_heroes.json', 'r') as file:
     datas = json.load(file)
 
+# datas=[{
+#         "ename":199,
+#         "cname":"公孙离",
+#         "id_name":"gongsunli",
+#         "title":"幻舞玲珑",
+#         "new_type":0,
+#         "hero_type":5,
+#         "skin_name":[
+#             "幻舞玲珑",
+#             "花间舞",
+#             "蜜橘之夏",
+#             "无限星赏官",
+#             "祈雪灵祝",
+#             "玉兔公主",
+#             "记忆之芯"
+#         ],
+#         "moss_id":4580
+#     }]
+
 all_data=[]
 lock=threading.Lock()
 
@@ -73,6 +92,21 @@ def getInfo(item):
     for skill in skill_data:
         data['skills'].append(skill)
 
+    story_div = soup.find('div', class_='pop-story')
+
+    # Extract paragraphs within the story
+    paragraphs = story_div.find_all('p')
+
+    story=""
+    # Print each paragraph's text
+    for p in paragraphs:
+        if p==paragraphs[0]:
+            story+=(p.get_text(strip=True))
+        else:
+            story+="\n"+(p.get_text(strip=True))
+
+    data['hero-story']=story
+
     with lock:
         all_data.append(data)
 
@@ -96,6 +130,6 @@ if __name__ == "__main__":
     with open("heroinfo.json", "w", encoding='utf8') as f:
         json.dump(all_data, f, ensure_ascii=False)
 
-    # with ThreadPoolExecutor(8) as t:
-    #     for item in datas:
-    #         t.submit(getImg, item=item)
+    with ThreadPoolExecutor(8) as t:
+        for item in datas:
+            t.submit(getImg, item=item)
