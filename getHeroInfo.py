@@ -63,16 +63,14 @@ def getInfo(item):
     for idx, skill in enumerate(visible_skills):
         # Extract skill name
         skill_name_element = skill.find('p', class_='skill-name')
-        skill_name = skill_name_element.find('b').text.strip() if skill_name_element.find('b') else ''
+        skill_name = skill_name_element.find('b').text.strip()
 
         if not skill_name:
             continue
 
         # Extract cooldown and cost
-        cooldown = skill_name_element.find_all('span')[0].text.strip() if len(
-            skill_name_element.find_all('span')) > 0 else ''
-        cost = skill_name_element.find_all('span')[1].text.strip() if len(
-            skill_name_element.find_all('span')) > 1 else ''
+        cooldown = skill_name_element.find_all('span')[0].text.strip().split('：')[1]
+        cost = skill_name_element.find_all('span')[1].text.strip().split('：')[1]
 
         # Extract skill description
         skill_desc = skill.find('p', class_='skill-desc').text.strip()
