@@ -30,3 +30,8 @@ if __name__ == '__main__':
    # response=requests.get(url=url,headers=requestparams.headers)
    # path=Path("ming.json")
    # path.write_text(response.text)
+
+   url="https://prod.comp.smoba.qq.com/leaguesite/leagues/open"
+   response=requests.get(url=url,headers=requestparams.headers)
+   path=Path("leagues.json")
+   path.write_text(response.text)
