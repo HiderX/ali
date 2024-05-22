@@ -51,12 +51,6 @@ def getInfo(item):
         percentage = li.find('i')['style'].split(':')[1].strip()
         data[label] = percentage
 
-    # for attribute, value in data.items():
-    #     print(f"{attribute}: {value}")
-
-    image_elements = soup.select('.skill-u1 li img')
-    images = [img['src'] for img in image_elements]
-
     visible_skills = soup.find_all('div', class_='show-list')
 
     skill_data = []
@@ -76,14 +70,14 @@ def getInfo(item):
         skill_desc = skill.find('p', class_='skill-desc').text.strip()
 
         # Fetch corresponding image source
-        img_src = images[idx] if idx < len(images) else None
+        img_base_url="https://game.gtimg.cn/images/yxzj/img201606/heroimg/"
 
         skill_data.append({
             'Skill Name': skill_name,
             'Cooldown': cooldown,
             'Cost': cost,
             'Description': skill_desc,
-            'Image Source': "https:" + img_src
+            'Image Source': img_base_url+ename+"/"+ename+str(idx)+"0.png"
         })
 
     data['skills'] = []
