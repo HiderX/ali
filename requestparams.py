@@ -23,8 +23,7 @@ def get_ua():
     return user_agent
 
 
-
 headers = {
-      # 假装自己是浏览器
-      'User-Agent': get_ua()
+    # 假装自己是浏览器
+    'User-Agent': get_ua()
 }

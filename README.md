@@ -2,7 +2,7 @@
 
 ## 说明
 
-### json
+### json文件
 
 | json          | info            |
 | ------------- | --------------- |
@@ -14,23 +14,17 @@
 | summoner.json | 召唤师技能信息  |
 | leagues.json  | 联赛信息        |
 
-### py
+### python文件
 
-| py             | info                             |
-| -------------- | -------------------------------- |
-| getHeroInfo    | 获取英雄完整信息                 |
-| getItemPic     | 获取装备图片                     |
-| getSummonerPic | 获取召唤师技能图片               |
-| img_download   | 图片下载脚本                     |
-| main           | 主函数                           |
-| panda          | 装备信息清洗                     |
-| panda_ming     | 铭文信息清洗                     |
-| pandas_hero    | 英雄信息清洗                     |
-| requestparams  | 公用的requests参数               |
+| py             | info             |
+|----------------|------------------|
+| getHeroInfo    | 获取英雄完整信息         |
+| getItemPic     | 获取装备图片           |
+| getSummonerPic | 获取召唤师技能图片        |
+| img_download   | 图片下载脚本           |
+| main           | 主函数，抓取主要json     |
+| pandaItem      | 装备信息清洗           |
+| pandaMing      | 铭文信息清洗           |
+| pandaHero      | 英雄信息清洗           |
+| requestparams  | 公用的requests参数    |
 | getMatchInfo   | 获取联赛的每场比赛的每个小局信息 |
-
-## ToDo
-
-- 命名规范化
-- 去除无用代码
-- 增加进度条

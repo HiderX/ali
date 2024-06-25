@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 
 
 def process_item_description(df):

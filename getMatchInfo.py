@@ -6,8 +6,7 @@ import requests
 
 import requestparams
 
-# league_ids = ['20190001', '20190004', '20200001', '20200004', '20210021', '202100201', '20210004', '20220001','20220002', '20230001', '20230002', '20240001']
-league_ids=[]
+league_ids = []
 base_league_url = "https://prod.comp.smoba.qq.com/leaguesite/matches/open"
 base_match_url = "https://prod.comp.smoba.qq.com/leaguesite/match/battles/open"
 base_battle_url = "https://prod.comp.smoba.qq.com/leaguesite/battle/open"

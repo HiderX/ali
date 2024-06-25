@@ -11,30 +11,13 @@ from bs4 import BeautifulSoup  # 网页解析
 with open('processed_heroes.json', 'r') as file:
     datas = json.load(file)
 
-# datas=[{
-#         "ename":199,
-#         "cname":"公孙离",
-#         "id_name":"gongsunli",
-#         "title":"幻舞玲珑",
-#         "new_type":0,
-#         "hero_type":5,
-#         "skin_name":[
-#             "幻舞玲珑",
-#             "花间舞",
-#             "蜜橘之夏",
-#             "无限星赏官",
-#             "祈雪灵祝",
-#             "玉兔公主",
-#             "记忆之芯"
-#         ],
-#         "moss_id":4580
-#     }]
+all_data = []
+lock = threading.Lock()
 
-all_data=[]
-lock=threading.Lock()
 
-def get_ename(data):
+def getEname(data):
     return data['ename']
+
 
 def getInfo(item):
     ename = str(item.get("ename"))
@@ -70,14 +53,14 @@ def getInfo(item):
         skill_desc = skill.find('p', class_='skill-desc').text.strip()
 
         # Fetch corresponding image source
-        img_base_url="https://game.gtimg.cn/images/yxzj/img201606/heroimg/"
+        img_base_url = "https://game.gtimg.cn/images/yxzj/img201606/heroimg/"
 
         skill_data.append({
             'Skill Name': skill_name,
             'Cooldown': cooldown,
             'Cost': cost,
             'Description': skill_desc,
-            'Image Source': img_base_url+ename+"/"+ename+str(idx)+"0.png"
+            'Image Source': img_base_url + ename + "/" + ename + str(idx) + "0.png"
         })
 
     data['skills'] = []
@@ -89,18 +72,19 @@ def getInfo(item):
     # Extract paragraphs within the story
     paragraphs = story_div.find_all('p')
 
-    story=""
+    story = ""
     # Print each paragraph's text
     for p in paragraphs:
-        if p==paragraphs[0]:
-            story+=(p.get_text(strip=True))
+        if p == paragraphs[0]:
+            story += (p.get_text(strip=True))
         else:
-            story+="\n"+(p.get_text(strip=True))
+            story += "\n" + (p.get_text(strip=True))
 
-    data['hero-story']=story
+    data['hero-story'] = story
 
     with lock:
         all_data.append(data)
+
 
 def getImg(item):
     ename = str(item.get("ename"))
@@ -111,13 +95,14 @@ def getImg(item):
         skin_ids.append(ename + "-bigskin-" + str(i))
     img_download.download_images(base_url_template, skin_ids, f"skins/{ename}")
 
+
 if __name__ == "__main__":
     with ThreadPoolExecutor(8) as t:
         for item in datas:
             t.submit(getInfo, item=item)
 
     print(all_data)
-    all_data.sort(key=get_ename)
+    all_data.sort(key=getEname)
 
     with open("heroinfo.json", "w", encoding='utf8') as f:
         json.dump(all_data, f, ensure_ascii=False)

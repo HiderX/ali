@@ -3,9 +3,7 @@ import json
 
 
 def process_item_description(df):
-    # 处理描述字段，去除 HTML 标签，并将其分割成列表
-    df['ming_des'] = df['ming_des'].apply(
-        lambda x: x.replace('<p>', '').replace('</p>', '').strip())
+    df['skin_name'] = df['skin_name'].apply(lambda x: x.split('|'))
     return df
 
 
@@ -21,6 +19,6 @@ def read_process_write(input_file, output_file):
 
 
 # 指定输入和输出文件路径
-input_filename = 'ming.json'
-output_filename = 'processed_ming.json'
+input_filename = 'heroes.json'
+output_filename = 'processed_heroes.json'
 read_process_write(input_filename, output_filename)
