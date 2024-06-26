@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.container2 {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.table {
+    margin-top: 50px;
+}
+
+#searchInput {
+    width: 93%;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.match-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #343a40;
+    white-space: nowrap;
+}
+
+.match-pos {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+
+.match-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.match-container .match-card {
+    flex: 0 0 30%;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .match-container .match-card {
+        flex: 0 0 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .match-container .match-card {
+        flex: 0 0 100%;
+    }
+}
+
+.match-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.match-status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.match-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.team-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.match-info {
+    flex: 1;
+    text-align: center;
+}
+
+.match-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.match-score {
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team-score {
+    margin: 0 10px;
+}
+
+.match-details {
+    font-size: 1em;
+    color: #888;
+}

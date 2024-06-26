@@ -1,0 +1,1 @@
+select hero_id, hero_name, title, pos from hero NATURAL JOIN hero_pos where hero_name like '%云%' or title like '%心%';

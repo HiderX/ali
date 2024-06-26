@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.hero-details {
+    margin-top: 100px;
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.hero-pos,
+.hero-skill,
+.hero-skin {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+.skill-container,
+.skin-container {
+    margin-top: 20px;
+}
+
+.hero-pos,
+.hero-skill{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: flex-start; /* 对齐方式：顶部对齐 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.skill-img {
+    width: 80px; /* 固定技能图标宽度 */
+    height: 80px; /* 固定技能图标高度 */
+    object-fit: cover; /* 确保图片填充容器并裁剪溢出部分 */
+    border-radius: 5px; /* 添加圆角 */
+    margin-right: 15px; /* 右边距，用于与技能信息分开 */
+}
+
+.skill-info {
+    display: flex;
+    flex-direction: column; /* 使信息块垂直排列 */
+}
+
+.skill-description {
+    margin: 5px 0; /* 上下边距，用于分隔描述与其他信息 */
+}
+
+.hero-img-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin:auto;
+}
+
+.hero-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.skin-container {
+    margin-top: 20px;
+}
+
+.hero-skin {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skin {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.skin-name {
+    flex: 1;
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+.skin-img-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.skin-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

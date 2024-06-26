@@ -1,0 +1,1 @@
+select skill_name,cooldown,cost,description,image_source from hero NATURAL JOIN hero_skill where hero_name = '小乔';

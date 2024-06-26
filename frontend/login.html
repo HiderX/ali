@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/login.css" /> 
+</head>
+
+<body onclick="playAudio()">
+
+    <audio id="audio-player" autoplay class="hide-player">
+        <source src="media/HOYO-MiX - 白鹭舒翼 Pathos of Shirasagi.flac"
+            type="audio/flac">
+    </audio>
+
+    <div id="video-background">
+        <video src="media/bg.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>
+    </div>
+
+    <!-- Login Form -->
+    <form id="login" class="login show">
+        <div class="login_box">
+            <div class="title">
+                <a class="logo" href="index.html"><img src="media/logo.png" alt=""></a>
+                <a class="exit" href="" id="exit"><img src="media/close1.png" alt=""></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="input"><input type="text" name="username" placeholder="输入用户名"></div>
+            <div class="input"><input type="password" name="password" placeholder="输入密码"></div>
+        </div>
+        <div class="register-text">
+            <span>
+                <a href="" class="a1">没有账号？</a>
+                <a href="" class="a2" id="register_btn">立即注册</a>
+            </span>
+            <span><a href="https://pvp.qq.com/" class="a3">忘记密码</a></span>
+        </div>
+        <div class="start">
+            <button type="submit">进入游戏</button>
+        </div>
+    </form>
+
+    <!-- Register Form -->
+    <form id="register" class="register">
+        <div class="login_box">
+            <div class="title">
+                <a class="logo" href="index.html"><img src="media/logo.png" alt=""></a>
+                <a class="exit" href="https://ys.mihoyo.com/"><img src="media/close1.png" alt=""></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="input"><input type="text" name="name" placeholder="请输入昵称"></div>
+            <div class="input"><input type="text" name="email" placeholder="请输入邮箱"></div>
+            <div class="input"><input type="password" name="password" placeholder="请输入密码"></div>
+            <div class="input"><input type="password" name="repassword" placeholder="请确认密码"></div>
+            <div class="input"><input type="text" name="age" placeholder="请输入年龄"></div>
+        </div>
+        <div class="xieyi">
+            <input type="checkbox" name="agreement">
+            <span>已同意《用户协议》和《隐私权益》</span>
+        </div>
+        <div class="register-text">
+            <span>
+                <a href="" class="a2" id="login_btn">返回登录页面</a>
+            </span>
+        </div>
+        <div class="start">
+            <button type="submit">注册并登录</button>
+        </div>
+    </form>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+INSERT INTO `test select` (`hero_id`, `hero_name`, `title`, `pos`) VALUES (107, '赵云', '苍天翔龙', '战士');
+INSERT INTO `test select` (`hero_id`, `hero_name`, `title`, `pos`) VALUES (137, '司马懿', '寂灭之心', '刺客');
+INSERT INTO `test select` (`hero_id`, `hero_name`, `title`, `pos`) VALUES (505, '瑶', '鹿灵守心', '辅助');
+INSERT INTO `test select` (`hero_id`, `hero_name`, `title`, `pos`) VALUES (506, '云中君', '流云之翼', '刺客');
+INSERT INTO `test select` (`hero_id`, `hero_name`, `title`, `pos`) VALUES (521, '海月', '永夜之心', '法师');
+INSERT INTO `test select` (`hero_id`, `hero_name`, `title`, `pos`) VALUES (538, '云缨', '燎原之心', '战士');
+INSERT INTO `test select` (`hero_id`, `hero_name`, `title`, `pos`) VALUES (544, '赵怀真', '自在之心', '战士');

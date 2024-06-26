@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#isjfmg {
+    width: 50px;
+    height: 26px;
+    en: 1;
+}
+
+#ithtm7 {
+    width: 50px;
+    height: 28px;
+    en: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#nav-1 .header-inner {
+    width: 100%;
+}
+
+#nav-1 .header-inner::after {
+    content: " ";
+    height: 0px;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+#nav-1 h1 {
+    float: left;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+#nav-1>a {
+    display: inline-block;
+    width: 138px;
+    height: 22px;
+}
+
+#nav-1 img {
+    height: 22px;
+    width: auto;
+}
+
+#nav-1 nav {
+    float: right;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+#nav-1 nav ul {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+#nav-1 nav ul li {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 6px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    display: inline-block;
+    zoom: 1;
+}
+
+#nav-1 nav ul li a {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+    position: relative;
+    transition-behavior: normal;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+#nav-1 nav ul li a:hover {
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+#nav-1 nav ul li a.active,
+#nav-1 nav ul li a:focus {
+    outline-color: initial;
+    outline-style: none;
+    outline-width: initial;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    color: white;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(31, 181, 123);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.fdb-block .text-h1,
+.fdb-block h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    font-weight: 400;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: 181.99px;
+    width: 292px;
+}
+
+.fdb-block .col-fill-left {
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    z-index: 1;
+}
+
+a {
+    color: rgb(0, 123, 255);
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    background-color: transparent;
+}
+
+a:hover {
+    color: rgb(0, 86, 179);
+    text-decoration-line: underline;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+.fdb-block img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.fdb-block .fdb-touch {
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: rgb(82, 139, 255);
+}
+
+.fdb-block .fdb-box {
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+    color: rgb(68, 68, 68);
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+footer {
+    font-size: 16px;
+}
+
+footer a {
+    color: rgb(68, 68, 68);
+}
+
+footer a:hover {
+    color: rgb(0, 86, 179);
+}
+
+footer .nav-link {
+    display: block;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0px;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+.fdb-block .text-h3 {
+    font-size: 0.875rem;
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    font-weight: 400;
+}
+
+.fdb-block .text-h3 a {
+    margin-right: 12px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.rounded.img-fluid.d-block.mx-auto {
+    width: 487px;
+    height: 304px;
+}

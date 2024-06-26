@@ -1,0 +1,9 @@
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (1116, '雷鸣刃', 450, 270, '攻击');
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (1123, '狂暴双刃', 890, 534, '攻击');
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (1132, '泣血之刃', 1800, 1080, '攻击');
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (1133, '无尽战刃', 2140, 1284, '攻击');
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (1136, '影刃', 2070, 1242, '攻击');
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (1158, '血魂刃', 830, 498, '攻击');
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (1511, '狩猎宽刃', 250, 150, '打野');
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (1524, '瑞鳞拳刃', 750, 450, '打野');
+INSERT INTO `test select` (`item_id`, `item_name`, `total_price`, `price`, `pos`) VALUES (11210, '制裁之刃', 1860, 1116, '攻击');
